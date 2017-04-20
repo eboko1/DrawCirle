@@ -18,7 +18,6 @@ public class Circle extends AppCompatActivity {
         //setContentView(R.layout.activity_circle);
         setContentView(new MyCircle(this));
 
-
     }
 
   public class MyCircle extends View{
@@ -38,7 +37,7 @@ public class Circle extends AppCompatActivity {
         paint.setColor(Color.WHITE);
         canvas.drawPaint(paint);
         paint.setColor(Color.parseColor("#da4747"));
-        canvas.drawCircle(x/2, y/2, radius, paint);
+        canvas.drawCircle(x/2, y, radius, paint);
 
     }
   }
